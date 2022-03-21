@@ -44,7 +44,8 @@ RUN apt-get install -y --no-install-recommends \
         net-tools       \
         nicstat         \
         nmap            \
-        tcpdump
+        tcpdump         \
+        iptables
 
 RUN apt-get -y autoremove \
  && apt-get -y clean \
