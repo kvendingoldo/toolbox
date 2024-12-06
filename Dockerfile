@@ -47,6 +47,11 @@ RUN apt-get install -y --no-install-recommends \
         tcpdump         \
         iptables
 
+RUN apt-get install -y --no-install-recommends \
+      unzip
+
+RUN curl https://rclone.org/install.sh | bash
+
 RUN apt-get -y autoremove \
  && apt-get -y clean \
  && rm -rf /var/lib/apt/lists/* \
