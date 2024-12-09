@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 
 ENTRYPOINT ["/bin/bash"]
 
@@ -27,24 +27,24 @@ RUN apt-get install -y --no-install-recommends \
         lsof
 
 RUN apt-get install -y --no-install-recommends \
-        arping          \
-        bridge-utils    \
-        ca-certificates \
-        curl            \
-        wget            \
-        telnet          \
-        iputils-ping    \
-        dnsutils        \
-        netcat          \
-        ethtool         \
-        iftop           \
-        iperf           \
-        iproute2        \
-        mtr-tiny        \
-        net-tools       \
-        nicstat         \
-        nmap            \
-        tcpdump         \
+        arping                \
+        bridge-utils          \
+        ca-certificates       \
+        curl                  \
+        wget                  \
+        telnet                \
+        iputils-ping          \
+        dnsutils              \
+        netcat-traditional    \
+        ethtool               \
+        iftop                 \
+        iperf                 \
+        iproute2              \
+        mtr-tiny              \
+        net-tools             \
+        nicstat               \
+        nmap                  \
+        tcpdump               \
         iptables
 
 RUN apt-get install -y --no-install-recommends \
